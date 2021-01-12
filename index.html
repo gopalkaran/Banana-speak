@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Banana Speak</title>
+    <meta charset="UTF-8" />
+    <style>
+      h1 {
+        text-align: center;
+      }
+      textarea {
+        width: 80%;
+        height: 10vh;
+        display: block;
+        margin: 1rem auto;
+        padding: 1rem;
+      }
+      button {
+        margin: 1rem auto;
+        display: block;
+      }
+      #output {
+        border: 1px solid black;
+        height: 10vh;
+        width: 80%;
+        margin: 1rem auto;
+        padding: 1rem;
+      }
+    </style>
+  </head>
+
+  <body>
+    <h1>Talk Banana</h1>
+    <textarea
+      id="text-input"
+      placeholder="Put your sentence in english here and we will convert it to banana"
+    ></textarea>
+    <button id="btn-translate">Translate</button>
+    <div style="font-size: larger; text-align: center;">
+      Output will come here 👇
+    </div>
+    <div id="output"></div>
+    <script src="src/index.js"></script>
+  </body>
+</html>
